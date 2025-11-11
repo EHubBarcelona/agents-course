@@ -9,3 +9,14 @@
 - [Building Your First LangGraph](https://huggingface.co/learn/agents-course/unit2/langgraph/first_graph)
 - [Document Analysis Graphs](https://huggingface.co/learn/agents-course/unit2/langgraph/document_analysis_agent)
 - [LangGraph Integrations](https://docs.langchain.com/oss/python/integrations/providers/overview)
+
+## Using Hugging Face Inference Endpoints
+```python
+from langchain_openai import ChatOpenAI
+
+
+llm = ChatOpenAI(
+    openai_api_base="https://router.huggingface.co/v1",
+    openai_api_key="YOUR TOKEN",
+    model_name="moonshotai/Kimi-K2-Thinking" 
+)
